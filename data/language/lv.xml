@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <!-- Main menu -->
+    <item name="LOADING"                  value="Ielādēju..."/>
+    
+    <item name="MAIN_MENU"                value="Squares 3D"/>
+    <item name="START_SINGLEPLAYER"       value="Sākt spēli"/>
+    <item name="RULES"                    value="Spēles noteikumi"/>
+    <item name="CONTROLS"                 value="Vadība"/>
+    <item name="CREDITS"                  value="Autori"/>
+    <item name="QUIT_GAME"                value="Iziet no spēles"/>
+    
+    <item name="RLY_QUIT"                 value="Tiešām vēlaties iziet?"/>
+
+    <item name="BACK"                     value="Atpakaļ"/>
+
+    <!-- Singleplayer menu -->
+    <item name="EASY"                     value="Viegls līmenis"/>
+    <item name="NORMAL"                   value="Vidējs līmenis"/>
+    <item name="HARD"                     value="Grūts līmenis"/>
+    <item name="EXTRA"                    value="Ekstra līmenis"/>
+
+    <item name="CREDITS_SCREEN">Programmēšana &amp; dizains:
+Mārtiņš Možeiko
+Kristaps Straupe
+
+Liels paldies sekojošiem cilvēkiem:
+Atis Straujums (extra līmenis)
+Gustavs Gūtmanis (spēles logo &amp; ikonas)
+Dmitry Chirkov (spēlētāju modelis)
+Martin Offermann (izvēļņu mūzika &amp; skaņu efekti)
+Aleksanders Belovs (tulkojums krieviski)
+Dirk Stegemann (tulkojums vāciski)
+Spēles mūzikas autors trash80 (paņemta no trash80.net)
+Kā arī pārējiem, kas ir palīdzējuši tapšanas procesā!</item>
+
+    <item name="RULES_SCREEN">
+    Spēli uzsāk ar bumbas izmetienu pret laukuma centru. Spēlētāji drīkst pieskarties bumbai tikai pēc 3. bumbas
+atsitiena no zemes, pretējā gadījumā spēlētājs, kurš pieskāries agrāk, saņem par to mīnuspunktu.
+    Ar katru spēlētāja pieskārienu bumbai, kamēr tā nav nokritusi uz zemes, potenciālo mīnusu skaits tiek palielināts
+par vienu.
+    Spēlētājs saņem mīnusu, kad:
+        * Bumba ir atstājusi laukumu, no viņa laukuma kvadrāta. Spēlētājs saņem tik mīnuspunktus, cik ir bijuši
+          uzsitieni pa bumbu, kamēr tā nav pieskārusies zemei. Ja spēlētājs bija pēdējais, kurš pieskārās bumbai,
+          pirms tā atstāja laukumu no viņa kvadrāta, tad viņš saņem tikai tik mīnuspunktus, cik reizes pats bija
+          pieskāries bumbai gaisā (pēc pēdējā pretinieka pieskāriena, ja tāds bijis), pirms tā atstāja laukumu.
+        * Bumba ir atstājusi laukumu, no paša spēlētāja ķermeņa. Spēlētājs saņem tik mīnuspunktus, cik ir reizes
+          pieskāries bumbai gaisā (pēc pēdējā pretinieka, ja tāds bija pieskāries) pirms izsišanas ārpus laukuma.
+    Kamēr bumba ārpus laukuma nav nokritusi zemē, spēlētājs drīkst to ķert un mēģināt iedabūt atpakaļ laukumā,
+tā, lai tā nepieskaras zemei ārpus laukuma. Kamēr bumba ārpus laukuma nav pieskārusies zemei, tikmēr spēle
+turpinās. Objekti, kas ir augstāk par zemi netiek ieskaitīti kā pieskārieni zemei.
+    Ja spēlētājs saņem mīnusu, spēle tiek atsākta ar bumbas izmetienu no spēlētāja laukuma tā, lai bumba atsistos
+spēlētāja laukumā un pēc tam spēlētājam pa diagonāli pretējā laukumā, vai pret tā spēlētāju. Kamēr bumba nav
+atsitusies pret vienu no tiem, pārējie spēlētāji bumbai nedrīkst pieskarties, pretējā gadījumā tie saņem mīnusa punktu.
+    Ja bumba atstāj laukumu no kādas no laukuma viduslīnijām, tad spēli atsāk ar bumbas izmetienu viduslīniju
+krustpunktā, laukuma centrā. Spēlētāji drīkst pieskarties bumbai tikai pēc pirmā atsitiena.
+    Spēlē zaudē tas spēlētājs, kurš pirmais saņem 21 mīnusu punktu.
+    </item>
+
+    <item name="CONTROLS_SCREEN">
+Spēles vadība:
+  * Pieskarieties ekrānam un velciet, lai rotētu
+  * Pieskarieties un velciet &lt;M&gt; vadības pogu, lai 
+    kustinātu spēlētāju
+  * Spiediet &lt;C&gt; pogu, lai ķertu bumbu
+  * Spiediet &lt;J&gt; pogu, lai lektu
+  * Spiediet &lt;Pause&gt; pogu, lai apturētu spēli
+</item>
+
+    <!-- Ingame texts -->
+    <item name="FPS_DISPLAY"           value="FPS: $1"/>
+    <item name="PLAYER_KICKS_OUT_BALL" value="$1 izsper bumbu ārā!&#10;+$2"/>
+    <item name="OUT_FROM_FIELD"        value="Ārā no $1 laukuma!&#10;+$2"/>
+    <item name="OUT_FROM_MIDDLE_LINE"  value="Bumba ārā no viduslīnijas!"/>
+    <item name="PLAYER_TOUCHES_TWICE"  value="$1 divi pieskārieni!&#10;+$2"/>
+    <item name="PLAYER_UNALLOWED"      value="$1 ir par agru pieskāries bumbai!&#10;+$2"/>
+
+    <item name="HITS_COMBO"            value="$1 Uzsitienu kombo!!"/>
+    <item name="HITS"                  value="$1 Uzsitieni!!"/>
+    
+    <item name="SCORE_MESSAGE"         value="$1: $2"/>
+
+    <item name="ESC_MESSAGE">
+Pauze
+        
+Pieskarieties šeit, lai atgrieztos uz galveno izvēlni..
+vai kaut kur citur, lai turpinātu spēli
+    </item>
+    <item name="CONTINUE">
+Apsveicam, Jūs esat pabeidzis šo grūtības līmeni!
+
+Pieskarieties ekrānam, lai atgrieztos uz galveno izvēlni.
+    </item>
+
+    <item name="RESTART">
+Jūs zaudējāt..
+
+Pieskarieties šeit, lai atgrieztos uz galveno izvēlni..
+vai kaut kur citur, lai atkārtotu spēli
+    </item>
+
+    <item name="PAUSE"                 value="Pauze"/>
+
+    <item name="FINISHED_GAME">
+Apsveicam, jūs esat pabeidzis EXTRA līmeni!
+Tagad Jūs esat nepārspēts kvadrātu čempions.
+Neviens vairs nespēj Jūs pieveikt!
+Pieskarieties ekrānam, lai atgrieztos uz galveno izvēlni.
+    </item>
+
+    <item name="GAME_OVER"             value="Spēle beigusies!"/>
+
+
+    <item name="TRUE"                     value="Jā"/>
+    <item name="FALSE"                    value="Nē"/>
+</xml>

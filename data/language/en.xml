@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <!-- Main menu -->
+    <item name="LOADING"                  value="Loading..."/>
+
+    <item name="MAIN_MENU"                value="Squares 3D"/>
+    <item name="START_SINGLEPLAYER"       value="Start Game"/>
+    <item name="RULES"                    value="Game Rules"/>
+    <item name="CONTROLS"                 value="Controls"/>
+    <item name="CREDITS"                  value="Credits"/>
+    <item name="QUIT_GAME"                value="Quit Game"/>
+
+    <item name="RLY_QUIT"                 value="Do you really want to quit?"/>
+
+    <item name="BACK"                     value="Back"/>
+
+    <!-- Singleplayer menu -->
+    <item name="EASY"                     value="Easy Level"/>
+    <item name="NORMAL"                   value="Normal Level"/>
+    <item name="HARD"                     value="Hard Level"/>
+    <item name="EXTRA"                    value="Extra Level"/>
+
+    <item name="CREDITS_SCREEN">Programming &amp; Design:
+Mārtiņš Možeiko
+Kristaps Straupe
+
+Also credits goes to:
+Atis Straujums (extra level),
+Gustavs Gūtmanis (logo &amp; icon)
+Dmitry Chirkov (player model)
+Martin Offermann (menu music &amp; sound effects)
+Alexander Belov (Russian translation)
+Dirk Stegemann (German translation)
+Game music by trash80 (taken from trash80.net)
+And other people who have helped us!</item>
+
+    <item name="RULES_SCREEN">
+    Game begins with a throw of the ball in the middle of the field. Players may not touch the ball before it has hit
+the ground 3 times. Otherwise the player who has touched the ball earlier gets 1 minus point.
+    With each touch of the player to the ball the count of potential minuses is increased by 1 point.
+    Player recieves a minus point when:
+        * Ball has left the field from the player`s field. Player then recieves as many minus points as there have been
+          touches to the ball while it has been in air. If the player was the last one who had hit the ball before it left the
+          field from the player`s square of field, he recieves as many minus points as he had gathered while ball was in
+          the air after the last touch to the ball (if any) by any of opponents.
+        * Ball has left the field from the body of the player. In this scenario the player recieves as many minus points
+          as he had gathered while ball was in the air after the last touch to the ball (if any) by any of opponents.
+    While the ball has not hit the ground outside of the field the player may try to catch it and get back into game
+field while keeping it in air. While the ball has not hit the ground outside of the game field, the game continues.
+Objects which are above ground are not counted as ground thus if the ball hits them, the game is not yet stopped.
+    If player recieves the minus point, the game is resumed with a throw of the ball from that player`s field in diagonal
+direction and it has to hit the same player`s field once and only after this event the diagonal player may touch the
+ball while others have to wait for him to touch it or for the ball to hit his (diagonal) field before they can touch the ball.
+If any of players fails to obey this rule he gets 1 minus point.
+    If ball has left the game field from any of middle lines the game is resumed with a throw of the ball in the middle
+of the game field. Players may touch the ball once it has hit the ground.
+    The player who first recieves 21 points loses the game.
+    </item>
+
+    <item name="CONTROLS_SCREEN">
+Ingame controls:
+  * Touch screen and drag to rotate
+  * Touch and drag &lt;M&gt; control to move your player
+  * Press &lt;C&gt; button to catch ball
+  * Press &lt;J&gt; button to jump
+  * Press &lt;Pause&gt; button to pause game
+</item>
+
+    <!-- Ingame texts -->
+    <item name="FPS_DISPLAY"           value="FPS: $1"/>
+    <item name="PLAYER_KICKS_OUT_BALL" value="$1 kicks the ball out!&#10;+$2"/>
+    <item name="OUT_FROM_FIELD"        value="Out from $1 field!&#10;+$2"/>
+    <item name="OUT_FROM_MIDDLE_LINE"  value="Ball out from middle line!"/>
+    <item name="PLAYER_TOUCHES_TWICE"  value="$1 touches twice!&#10;+$2"/>
+    <item name="PLAYER_UNALLOWED"      value="$1 touched the ball preliminary!&#10;+$2"/>
+
+    <item name="HITS_COMBO"            value="$1 Hits combo!!"/>
+    <item name="HITS"                  value="$1 Hits!!"/>
+
+    <item name="SCORE_MESSAGE"         value="$1: $2"/>
+
+    <item name="ESC_MESSAGE">
+Pause
+
+Touch here to quit to Main Menu..
+or somewhere else to resume game.
+    </item>
+
+    <item name="CONTINUE">
+Congratulations, You have cleared this level!
+
+Touch screen to return to Main Menu.
+    </item>
+    
+    <item name="RESTART">
+You`ve lost the game..
+
+Touch here to quit to Main Menu..
+or somewhere else to retry the game.
+    </item>
+
+    <item name="PAUSE"             value="Pause"/>
+
+    <item name="FINISHED_GAME">
+Congratulations, You have finished Extra level!
+Now you are The Ultimate Master of Squares.
+No one can defeat You anymore!
+Touch screen to return to Main Menu.
+    </item>
+
+    <item name="GAME_OVER"             value="Game has ended!"/>
+
+    <item name="TRUE"                     value="Yes"/>
+    <item name="FALSE"                    value="No"/>
+</xml>

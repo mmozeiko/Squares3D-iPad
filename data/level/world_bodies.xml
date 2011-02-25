@@ -1,0 +1,280 @@
+<xml>
+    <bodies>
+        <body id="apple_tree_1">
+            <position x="15.0" y="1.5" z="13.0"/>
+            <collision>apple_tree_bark</collision>
+            <collision>apple_tree_middle</collision>
+            <collision>apple_tree_top</collision>
+        </body>
+
+        <body id="apple_tree_2">
+            <position x="10.0" y="1.5" z="11.0"/>
+            <collision>apple_tree_bark</collision>
+            <collision>apple_tree_middle</collision>
+            <collision>apple_tree_top</collision>
+        </body>
+
+        <body id="apple_tree_3">
+            <position x="-3.0" y="1.5" z="14.0"/>
+            <collision>apple_tree_bark</collision>
+            <collision>apple_tree_middle</collision>
+            <collision>apple_tree_top</collision>
+        </body>
+
+		<body id="apple_tree_5">
+			<position x="3.0" y="1.5" z="12.0"/>
+			<collision>apple_tree_bark</collision>
+			<collision>apple_tree_middle</collision>
+			<collision>apple_tree_top</collision>
+		</body>
+
+		<body id="apple_tree_4">
+			<position x="6.0" y="1.5" z="8.0"/>
+			<collision>apple_tree_bark</collision>
+			<collision>apple_tree_middle</collision>
+			<collision>apple_tree_top</collision>
+		</body>
+
+        <body id="fir_tree_1">
+            <position x="-17.0" y="2.7" z="4.0"/>
+            <collision>fir_bark</collision>
+            <collision>fir_bottom</collision>
+            <collision>fir_middle</collision>
+            <collision>fir_top</collision>
+        </body>
+
+		<body id="fir_tree_2">
+			<position x="-17.0" y="2.7" z="-10.0"/>
+			<rotation x="0.0" y="0.0" z="-5.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+
+		<body id="fir_tree_3">
+			<position x="-25.0" y="2.7" z="-11.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+		
+		<body id="fir_tree_4">
+			<position x="-25.0" y="2.7" z="0.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+
+		<body id="fir_tree_5">
+			<position x="-25.0" y="2.7" z="6.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+
+		<body id="fir_tree_6">
+			<position x="-25.0" y="2.7" z="10.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+
+		<body id="fir_tree_7">
+			<position x="-25.0" y="2.7" z="-6.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+		
+		<body id="fir_tree_8">
+			<position x="-25.0" y="2.7" z="-17.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+
+		<body id="fir_tree_9">
+			<position x="10.0" y="1.5" z="-14.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<collision>fir_bark</collision>
+			<collision>fir_bottom</collision>
+			<collision>fir_middle</collision>
+			<collision>fir_top</collision>
+		</body>
+		
+        <body id="level">
+            <collision>level</collision>
+        </body>
+        
+        <body id="seat">
+            <position x="-8.0" y="0.0" z="2.0"/>
+            <rotation x="0.0" y="-45.0" z="0.0"/>
+            <collision>restSeatPlank</collision>
+            <collision>restSeatFoot1</collision>
+            <collision>restSeatFoot2</collision>
+        </body>
+
+        <body id="cucumberFan1">
+            <position x="-8.4" y="1.0" z="1.5"/>
+            <rotation x="0.0" y="130.0" z="0.0"/>
+            <collision>player_small</collision>
+            <collision>smallLegForPlayer_Small</collision>
+        </body>
+        <body id="cucumberFan2">
+            <position x="-7.6" y="1.0" z="2.5"/>
+            <rotation x="0.0" y="130.0" z="0.0"/>
+            <collision>player_small</collision>
+            <collision>smallLegForPlayer_Small</collision>
+        </body>
+        <body id="cucumberFan3">
+            <position x="8.0" y="0.7" z="2.5"/>
+            <rotation x="0.0" y="-90.0" z="0.0"/>
+            <collision>player_small</collision>
+            <collision>smallLegForPlayer_Small</collision>
+        </body> 
+        <body id="house1">
+            <position x="20.0" y="0.0" z="18.5"/>
+            <collision>house</collision>
+        </body>
+        
+        <body id="house1-2">
+            <position x="21.5" y="0.0" z="15.0"/>
+            <rotation x="0.0" y="90.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+
+        <body id="house2">
+            <position x="9.5" y="0.0" z="22.5"/>
+            <rotation x="0.0" y="0.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+
+        <body id="house2-1">
+            <position x="-0.5" y="0.0" z="20.5"/>
+            <rotation x="0.0" y="0.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+        
+        <body id="house3">
+            <position x="-15.0" y="0.0" z="15.0"/>
+            <rotation x="0.0" y="-30.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+
+        <body id="house4">
+            <position x="-15.0" y="0.0" z="-17.5"/>
+            <rotation x="0.0" y="180.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+        <body id="house4-1">
+            <position x="-5.0" y="0.0" z="-19.5"/>
+            <rotation x="0.0" y="180.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+        <body id="house4-2">
+            <position x="5.0" y="0.0" z="-21.5"/>
+            <rotation x="0.0" y="180.0" z="0.0"/>
+            <collision>house</collision>
+        </body>
+
+
+        <!--body id="wallLeft">
+            <position x="-10.0" y="0.0" z="0.0"/>
+            <collision>wall</collision>
+        </body>
+
+        <body id="wallRight">
+            <position x="10.0" y="0.0" z="0.0"/>
+            <rotation x="0.0" y="180.0" z="0.0"/>
+            <collision>wall</collision>
+        </body>
+
+        <body id="wallFront">
+            <position x="0.0" y="-0.001" z="10.0"/>
+            <rotation x="0.0" y="90.0" z="0.0"/>
+            <collision>wall</collision>
+        </body>
+
+        <body id="wallBack">
+            <position x="0.0" y="-0.001" z="-10.0"/>
+            <rotation x="0.0" y="-90.0" z="0.0"/>
+            <collision>wall</collision>
+        </body-->
+
+
+        <!--body id="player">
+            <position x="-4.0" y="2.5" z="2.0" />
+            <rotation x="0.0" y="0.0" z="0.0" />
+            <collision>player_biggy</collision>
+        </body-->
+
+        <!--body id="penguin0">
+            <position x="-8.0" y="5.5" z="5.0" />
+            <rotation x="0.0" y="0.0" z="0.0" />
+            <collision>player_small</collision>
+        </body>
+
+        <body id="penguin1">
+            <position x="-8.0" y="5.5" z="4.5" />
+            <rotation x="0.0" y="0.0" z="0.0" />
+            <collision>player_small</collision>
+        </body>
+
+        <body id="penguin2">
+            <position x="-8.0" y="5.5" z="4.0" />
+            <rotation x="0.0" y="0.0" z="0.0" />
+            <collision>player_small</collision>
+        </body>
+
+        <body id="penguin3">
+            <position x="-8.0" y="5.5" z="4.0" />
+            <rotation x="0.0" y="0.0" z="0.0" />
+            <collision>Dmitry</collision>
+        </body-->
+
+
+        <!--body id="tower_left">
+            <position x="-4.0" y="1.0" z="1.5"/>
+            <rotation x="0.0" y="45.0" z="0.0"/>
+            <collision>tower_left</collision>
+        </body>
+
+        <body id="tower_right">
+            <position x="-1.5" y="1.0" z="4.0"/>
+            <rotation x="0.0" y="45.0" z="0.0"/>
+            <collision>tower_right</collision>
+        </body>
+
+        <body id="tower_horiz">
+            <position x="-2.75" y="2.1" z="2.75"/>
+            <rotation x="0.0" y="-45.0" z="0.0"/>
+            <collision>tower_horiz</collision>
+        </body>
+
+        <body id="tower_top">
+            <position x="-2.75" y="4.2" z="2.75"/>
+            <rotation x="0.0" y="-45.0" z="0.0"/>
+            <collision>tower_top</collision>
+        </body-->
+
+	<body id="indago_banner">
+		<position x="8.0" y="0.5" z="0.0"/>
+		<rotation x="0.0" y="87.0" z="0.0"/>
+		<collision>banner</collision>
+	</body>
+		
+	</bodies>
+</xml>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <!-- Main menu -->
+    <item name="MAIN_MENU"                value="Squares 3D"/>
+    <item name="START_SINGLEPLAYER"       value="Starte Spiel"/>
+    <item name="RULES"                    value="Spielregeln"/>
+    <item name="CONTROLS"                 value="Steuerung"/>
+    <item name="CREDITS"                  value="Danksagung"/>
+    <item name="QUIT_GAME"                value="Spiel beenden"/>
+
+    <item name="RLY_QUIT"                 value="Do you really want to quit?"/><!--TODO-->
+
+    <item name="BACK"                     value="Zurück"/>
+
+    <!-- Singleplayer menu -->
+    <item name="EASY"                     value="Einfacher Schwierigkeitsgrad"/>
+    <item name="NORMAL"                   value="Mittlerer Schwierigkeitsgrad"/>
+    <item name="HARD"                     value="Hoher Schwierigkeitsgrad"/>
+    <item name="EXTRA"                    value="Extra Level"/>
+
+    <item name="CREDITS_SCREEN">Programmierung &amp; Design:
+Mārtiņš Možeiko
+Kristaps Straupe
+
+Weiterer Dank gebührt:
+Atis Straujums (Extra-Level)
+Gustavs Gūtmanis (Logo &amp; Programm-Icon)
+Dmitry Chirkov (Spielerfiguren)
+Martin Offermann (Hauptmenü Musik &amp; Sound-Effekte)
+Alexander Belov (Russische Übersetzung)
+Dirk Stegemann (Deutsche Übersetzung)
+>Game music by trash80 (taken from trash80.net)
+Sowie allen Leuten, die uns geholfen haben.</item><!--TODO-->
+
+    <item name="RULES_SCREEN">Zu Beginn des Spiels wird der Ball in der Mitte des Spielfeldes eingeworfen. Die Spieler dürfen den Ball nicht berühren,
+ehe dieser nicht wenigstens drei mal auf dem Boden aufgekommen ist. Sonst erhält derjenige Spieler, welcher den Ball
+zu früh berührt hat, einen Strafpunkt.
+    Mit jeder aufeinanderfolgenden Ballberührung der Spieler, ohne daß der Ball zwischenzeitlich den Boden berührt
+("Luftberührungen"), erhöht sich das angesammelte Strafpunkte-Potenzial, welches schließlich einem der Spieler
+angerechnet werden könnte, um einen Punkt. Erhält einer der Spieler einen oder mehrere Strafpunkte, wird das
+Strafpunkte-Potenzial wieder zurück auf Null gesetzt.
+
+Einem Spieler werden in folgenden Situationen Strafpunkte angerechnet:
+    * Der Ball verläßt das Spielfeld über die Spielfläche dieses Spielers. Der Spieler erhält dann so viele Strafpunkte,
+      wie sich zuvor durch "Luftberührungen" angesammelt haben.
+      Wenn der Spieler jedoch selbst als letztes den Ball berührt, bevor dieser seine Spielfläche verläßt und außerhalb
+      des Spielfeldes den Boden berührt, so erhält er nur so viele Strafpunkte wie er selbst zuletzt (nach etwaigen
+      Berührungen durch andere Spieler) durch aufeinanderfolgende "Luftberührungen" angesammelt hat.
+    * Der Ball springt vom Körper dieses Spielers direkt ins Aus. Auch in dieser Situation erhält der Spieler nur so
+      viele Strafpunkte, wie er selbst zuletzt (nach etwaigen Berührungen durch andere Spieler) durch aufeinanderfolgen-
+      de "Luftberührungen" angesammelt hat.
+
+    Solange der Ball den Boden außerhalb des Spielfeldes nicht berührt hat, dürfen die Spieler versuchen, diesen wieder
+zurück ins Spielfeld zu bugsieren, wobei er weiterhin in der Luft gehalten werden muß. Das Spiel geht solange weiter,
+bis der Ball schließlich außerhalb des Spielfeldes den Boden berührt.
+    Hindernisse und Gegenstände welche sich über Bodenhöhe befinden, gelten selbst nicht als Boden, so daß sie vom Ball
+berührt werden können ohne daß es zum Spielabbruch käme.
+    Wenn ein Spieler Strafpunkte erhält, so wird das Spiel anschließend mit einem Wurf des Balles von dessen Spielfläche
+aus fortgesetzt, wobei der Ball zunächst diese Spielfläche berühren muß. Danach muß der Ball zur diagonal gegenüber-
+liegenden Spielfläche springen, und bevor der Ball diese gegenüberliegende Spielfläche nicht berührt hat, darf der Ball
+lediglich von demjenigen Spieler gespielt werden, dem diese gegenüberliegende Spielfläche gehört; sofort danach darf
+der Ball jedoch auch von allen anderen Spielern berührt werden. Das Mißachten dieser Regel wird mit einem Strafpunkt
+geahndet.
+    Berührt der Ball vor dem Verlassen des Spielfeldes zuletzt eine der Mittellinien statt eine der Spielflächen, so wird
+der Ball in der Mitte des Spielfeldes eingeworfen. Die Spieler dürfen den Ball erst dann spielen, sobald dieser
+wenigstens einmal den Boden berührt hat.
+    Derjenige Spieler, welcher zuerst insgesamt 21 Strafpunkte erhalten hat, verliert das Spiel.    </item>
+
+    <item name="CONTROLS_SCREEN">
+Ingame controls:
+  * Touch screen and drag to rotate
+  * Touch and drag &lt;M&gt; control to move your player
+  * Press &lt;C&gt; button to catch ball
+  * Press &lt;J&gt; button to jump
+  * Press &lt;Pause&gt; button to pause game
+</item><!--TODO-->
+
+    <!-- Ingame texts -->
+    <item name="FPS_DISPLAY"           value="FPS: $1"/>
+    <item name="PLAYER_KICKS_OUT_BALL" value="$1 schießt den Ball ins Aus!&#10;+$2"/>
+    <item name="OUT_FROM_FIELD"        value="Der Ball geht über das Feld von $1 ins Aus!&#10;+$2"/>
+    <item name="OUT_FROM_MIDDLE_LINE"  value="Der Ball geht über die Mittellinie ins Aus!"/>
+    <item name="PLAYER_TOUCHES_TWICE"  value="$1 berührt den Ball zweimal!&#10;+$2"/>
+    <item name="PLAYER_UNALLOWED"      value="$1 hat den Ball zu früh berührt!&#10;+$2"/>
+
+    <item name="HITS_COMBO"            value="$1 Berührungen in Folge!!"/>
+    <item name="HITS"                  value="$1 Punkte!!"/>
+
+    <item name="SCORE_MESSAGE"         value="$1: $2"/>
+
+    <item name="ESC_MESSAGE">
+Pause
+
+Touch here um zum Hauptmenü zurückzukehren..
+or somewhere else um fortzufahren.
+    </item><!--TODO-->
+
+    <item name="CONTINUE">
+Glückwunsch, Du hast diesen Schwierigkeitsgrad geschafft!
+
+Touch screen um zum Hauptmenü zurückzukehren.
+    </item><!--TODO-->
+    
+    <item name="RESTART">
+Du hast das Spiel verloren.
+
+Touch here um zum Hauptmenü zurückzukehren..
+or somewhere else um es erneut zu versuchen.
+    </item><!--TODO-->
+
+    <item name="PAUSE"             value="Pause"/>
+
+    <item name="FINISHED_GAME">
+Glückwunsch, Du hast den Extra-Level gemeistert!
+Du bist jetzt der unbesiegbare Squares-Meister.
+Niemand kann Dich mehr bezwingen!
+
+Touch screen um zum Hauptmenü zurückzukehren.
+    </item>
+
+    <item name="GAME_OVER"             value="Das Spiel ist aus!"/>
+
+    <item name="TRUE"                     value="Ja"/>
+    <item name="FALSE"                    value="Nein"/>
+</xml>
