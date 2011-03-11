@@ -164,6 +164,7 @@ Collision* Collision::create(const XMLnode& node, Level* level)
     else
     {
         Exception("Unknown collision type - " + type);
+        return 0;
     }
 }
 

@@ -44,14 +44,12 @@ Intro::Intro() : m_timePassed(0), m_nextState(false), m_ballKicked(false), m_mes
         float origin[3];
         for (int x = 0; x < PIECE_XCOUNT; x++)
         {
-            NewtonBody* body = NewtonCreateBody(m_newtonWorld, collision);
             Matrix matrix = Matrix::translate(
                 Vector(-PIECE_XCOUNT*PIECE_SIZEX/2 + x*PIECE_SIZEX + (y%2 ? PIECE_SIZEX/2.0f : 0), 
                        PIECE_SIZEY/2.0f + y * PIECE_SIZEY,
                        0.0f)
             );
-
-            NewtonBodySetMatrix(body, matrix.m);
+            NewtonBody* body = NewtonCreateBody(m_newtonWorld, collision, matrix.m);
 
             NewtonConvexCollisionCalculateInertialMatrix(collision, inertia, origin);
             inertia[0] *= PIECE_MASS;
@@ -92,11 +90,9 @@ Intro::Intro() : m_timePassed(0), m_nextState(false), m_ballKicked(false), m_mes
     NewtonReleaseCollision(m_newtonWorld, collision);
 
     // ball
-    collision = NewtonCreateSphere(m_newtonWorld, BALL_R, BALL_R, BALL_R, 0, NULL);
-    m_ball_body = NewtonCreateBody(m_newtonWorld, collision);
-
     Matrix matrix = Matrix::translate(Vector(0.0f, BALL_R, 1.5f));
-    NewtonBodySetMatrix(m_ball_body, matrix.m);
+    collision = NewtonCreateSphere(m_newtonWorld, BALL_R, BALL_R, BALL_R, 0, NULL);
+    m_ball_body = NewtonCreateBody(m_newtonWorld, collision, matrix.m);
 
     float inertia[3];
     float origin[3];
@@ -113,10 +109,9 @@ Intro::Intro() : m_timePassed(0), m_nextState(false), m_ballKicked(false), m_mes
 
     // floor
     NewtonCollision* floor = NewtonCreateBox(m_newtonWorld, 20.0f, 1.0f, 20.0f, 0, NULL);
-    NewtonBody* floorBody = NewtonCreateBody(m_newtonWorld, floor);
-    NewtonReleaseCollision(m_newtonWorld, floor);
     matrix = Matrix::translate(Vector(0.0f, -0.5f, 0.0f));
-    NewtonBodySetMatrix(floorBody, matrix.m);
+    NewtonCreateBody(m_newtonWorld, floor, matrix.m);
+    NewtonReleaseCollision(m_newtonWorld, floor);
 
     m_ballTex = Video::instance->loadTexture("ball");
     m_logoTex = Video::instance->loadTexture("indago_logo", Texture::ClampToEdge);

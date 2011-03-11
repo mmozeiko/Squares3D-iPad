@@ -209,6 +209,7 @@ Body* Level::getBody(const string& id) const
     else
     {
         Exception("Couldn`t load body '" + id + "'");
+        return 0;
     }
 }
 
@@ -222,6 +223,7 @@ Collision* Level::getCollision(const string& id) const
     else
     {
         Exception("Could not find specified collision '" + id + "'");
+        return 0;
     }
 }
 

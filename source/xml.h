@@ -67,6 +67,7 @@ T XMLnode::getAttribute(const string& name) const
     }
 
     Exception("Missing attribute '" + name + "' in node '" + name + "' at line " + cast<string>(line));
+    return T();
 }
 
 string XMLnode::getAttribute(const string& name) const
@@ -78,6 +79,7 @@ string XMLnode::getAttribute(const string& name) const
     }
 
     Exception("Missing attribute '" + name + "' in node '" + name + "' at line " + cast<string>(line));
+    return string();
 }
 
 template <typename T>

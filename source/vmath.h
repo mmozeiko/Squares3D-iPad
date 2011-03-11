@@ -173,7 +173,7 @@ public:
     {
         return std::atan2(z, x);
     }
-};
+} __attribute__ ((aligned (16)));
 
 inline Vector operator + (const Vector& first, const Vector& second)
 {
@@ -431,7 +431,7 @@ public:
         }
         return Vector();
     }
-};
+} __attribute__ ((aligned (16)));
 
 Vector lerp(const Vector& v1, const Vector& v2, float alpha);
 

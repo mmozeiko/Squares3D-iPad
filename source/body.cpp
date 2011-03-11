@@ -133,11 +133,12 @@ void Body::createNewtonBody(const Vector&          position,
             //NewtonReleaseCollision(World::instance->m_newtonWorld, *collision);
         }
     }
+    
+    NewtonSetEulerAngle(rotation.v, m_matrix.m);
+    m_matrix = Matrix::translate(position) * m_matrix;
 
-    m_newtonBody = NewtonCreateBody(World::instance->m_newtonWorld, newtonCollision);
+    m_newtonBody = NewtonCreateBody(World::instance->m_newtonWorld, newtonCollision, m_matrix.m);
     NewtonBodySetUserData(m_newtonBody, static_cast<void*>(this));
-
-    setTransform(position, rotation);
 
     if (m_id != "level" && m_id != "wall")
     {
