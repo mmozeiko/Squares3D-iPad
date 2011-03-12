@@ -16,7 +16,7 @@ string getDateTime()
     return buf;
 }
 
-bool is_space(char c)
+static bool is_space(char c)
 {
     return c=='\n' || c=='\t' || c==' ' || c=='\r';
 }
